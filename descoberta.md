@@ -12,4 +12,4 @@ Quando a ferramenta oferecer modo Plan, ele pode ajudar a investigar o repositó
 
 ## Passe para execução quando a próxima entrega estiver clara
 
-Use o `task.md` para marcar as etapas de descoberta já revisadas e registrar o objetivo, as decisões confirmadas e como verificar a primeira microentrega. Quando uma dúvida impedir a etapa seguinte, volte à descoberta para resolver aquele ponto. [Ir para o fluxo de execução](fluxo-de-trabalho.md)
+Peça ao agente que registre no `task.md` as etapas de descoberta que você já revisou, o objetivo, as decisões confirmadas e como verificar a primeira microentrega. Quando uma dúvida impedir a etapa seguinte, volte à descoberta para resolver aquele ponto. [Ir para o fluxo de execução](fluxo-de-trabalho.md)

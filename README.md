@@ -12,11 +12,11 @@ Um guia prático para usar agentes em código que outras pessoas precisam revisa
 
 ## Para passar o guia a um agente
 
-Entregue o [ponto de entrada para agentes](PARA-AGENTES.md) e diga em qual repositório ele deve trabalhar. O arquivo indica o que ler e distingue o preparo do projeto da execução de uma feature.
+Entregue o [ponto de entrada para agentes](PARA-AGENTES.md), dê acesso aos arquivos do guia que ele referencia e indique o repositório de destino. O arquivo distingue o preparo do projeto da execução de uma feature.
 
 ## Documentação do projeto
 
-Comece com um arquivo de regras de negócio em `docs/` e um `docs/README.md` que explique o problema que o projeto resolve, para quem e com quais limites. Use o `AGENTS.md` para descrever o papel do agente, as regras de trabalho e as referências que ele deve consultar.
+Peça ao agente que prepare ou adapte os arquivos do projeto. Em `docs/`, comece com as regras de negócio e um `docs/README.md` que explique o problema que o projeto resolve, para quem e com quais limites. Revise o `AGENTS.md` proposto para confirmar o papel do agente, as regras de trabalho e as referências que ele deve consultar.
 
 A estrutura de `docs/` varia com o tamanho e as necessidades do projeto. Documente só o que ajuda a entender ou mudar o sistema. Prefira atualizar um documento existente e crie um arquivo novo quando a informação durável precisar de um lugar próprio. Uma referência separada da API, um mapa de arquitetura e um registro de decisões são opcionais. [Estrutura e exemplos de organização](modelos.md#estrutura-de-documentação-para-uma-api)
 

@@ -34,29 +34,37 @@ Mantenha uma referência compartilhada para a interface da API. No frontend, apo
 
 ## AGENTS.md
 
-Adapte as instruções ao repositório. Explique brevemente o que o agente deve fazer e aponte para o contexto do projeto em `docs/README.md`. Inclua regras de trabalho, comandos reais de verificação e os caminhos para as referências e os exemplos de código. Se o projeto já usa skills, indique quando usar cada uma. Mantenha os passos do procedimento na própria skill.
+Peça ao agente que adapte as instruções ao repositório e mostre o diff para revisão. A proposta deve descrever brevemente o papel dele e apontar para o contexto em `docs/README.md`, os comandos reais de verificação e as referências e exemplos de código. Se o projeto já usa skills, indique quando usar cada uma. Mantenha os passos do procedimento na própria skill.
 
 ```markdown
 # Instruções do repositório
 
 Seu papel é ajudar o dev a investigar, implementar e verificar a microentrega escolhida. Leia `docs/README.md` para entender o contexto do projeto.
 
+## Referências e comandos
+
+- Regras de negócio e contratos aplicáveis — indique os caminhos reais do projeto.
+- Verificação — indique os comandos que o projeto usa para testes, lint ou build.
+
+## Regras de trabalho
+
 - Preserve os arquivos de infraestrutura, DevOps e CI/CD, Docker, configuração de ambiente e o `README.md` da raiz. Se a tarefa depender de uma mudança nesses arquivos, avise o dev para que ele a faça.
 - Mantenha o `.env` fora de qualquer commit. Antes de commitar, confira os arquivos no stage.
-- Antes de editar, leia o task.md. Separe o contexto e o checklist temporários das regras de negócio e dos contratos que vão continuar valendo. Consulte docs/ e confira como o código e os fluxos dependentes se comportam hoje.
+- Antes de editar o código, consulte o `task.md`, as referências em `docs/` e os fluxos afetados no código. Separe o contexto e o checklist temporários das regras de negócio e dos contratos que vão continuar valendo.
 - Quando faltarem decisões de negócio ou arquitetura, levante as perguntas que mudam a entrega e compare as opções. Se a proposta, a documentação ou o código divergirem, indique os arquivos, a diferença de comportamento e o impacto. Peça uma decisão ao dev antes de implementar a etapa afetada.
 - Ao consumir uma API, consulte a referência da versão integrada. Se houver dúvida ou divergência, verifique o endpoint no código ou nos testes de integração e peça uma definição ao dev antes de mudar o consumidor.
-- Mapeie as regras para as microentregas e execute somente a etapa selecionada pelo dev. Preserve os comportamentos fora do escopo aprovado.
-- Rode as verificações aplicáveis à etapa. Cubra o comportamento novo e os fluxos existentes afetados. Para um bug reproduzível, adicione um teste de regressão e confirme que falha antes da correção e passa depois.
-- Ao devolver a etapa, informe o que mudou, quais comandos foram executados, os resultados e o que ainda precisa ser conferido. Aguarde a revisão do dev antes de avançar.
-- No encerramento, proponha onde registrar o aprendizado validado. Use docs/ para regras e contratos e o AGENTS.md para instruções recorrentes de trabalho. Submeta novas instruções à revisão do dev.
+- Quando a abordagem precisar de revisão ou a mudança for difícil de reverter, apresente um plano e aguarde a revisão antes de editar. Use o modo Plan quando estiver disponível.
+- A partir do que o dev explicar, registre no `task.md` o objetivo, o aceite e as microentregas com suas regras. Apresente o plano para revisão e execute somente a etapa autorizada. Preserve os comportamentos fora do escopo aprovado.
+- Rode as verificações aplicáveis à etapa. Cubra o comportamento novo e os fluxos existentes afetados. Para um bug reproduzível, adicione um teste de regressão e confirme que falha pelo motivo esperado antes da correção e passa depois.
+- Ao devolver a etapa, informe o que mudou, quais comandos foram executados, os resultados e o que ainda precisa ser conferido. Marque o item no `task.md` após a confirmação do dev e aguarde a autorização para avançar.
+- No encerramento, proponha onde registrar o aprendizado validado. Use a referência mantida pelo projeto para regras e contratos e o `AGENTS.md` para instruções recorrentes de trabalho. Apresente o diff de instruções propostas para revisão antes de adotá-las.
 - Documente só o necessário. No PR, atualize a fonte existente para regras e contratos afetados. Crie um documento apenas quando a informação durável precisar de um lugar próprio.
 - Ao concluir a feature, limpe o contexto específico e os itens concluídos do task.md. Preserve as instruções do arquivo e as pendências adiadas.
 ```
 
 ## docs/README.md
 
-Use este arquivo para dar contexto a quem chega ao projeto. Registre o que estiver confirmado e aponte para os arquivos que já detalham cada assunto.
+Peça ao agente que registre o contexto confirmado para quem chega ao projeto e aponte para os arquivos que já detalham cada assunto.
 
 ```markdown
 # Contexto do projeto
@@ -76,7 +84,7 @@ Indique onde consultar as regras de negócio e outras referências existentes.
 
 ## docs/regras-de-negocio.md
 
-Reaproveite a referência de regras do projeto quando ela já existir. Registre as dúvidas sobre comportamento na tarefa até que o dev confirme a definição.
+Peça ao agente que reaproveite a referência de regras do projeto e mantenha as dúvidas de comportamento no `task.md` até você confirmar a definição.
 
 ```markdown
 # Regras de negócio
@@ -88,7 +96,7 @@ Descreva quando a regra se aplica, qual comportamento deve ocorrer e quais exce�
 
 ## task.md
 
-Use o arquivo para trabalhar na feature atual. Ao encerrar, mantenha a estrutura e os itens abertos de **Deixado para depois**. O dev marca as microentregas revisadas.
+O agente mantém este arquivo durante a feature e marca as microentregas após a revisão e a confirmação do dev. No encerramento, preserva a estrutura e os itens abertos de **Deixado para depois**.
 
 ```markdown
 # Tarefa atual
