@@ -16,9 +16,13 @@ Revise o plano e peça ao agente que registre no `task.md` as decisões e etapas
 
 ## 2. Divida a execução em microentregas
 
-Peça ao agente que associe cada regra ou contrato às etapas que ele afeta. Uma mesma regra pode atravessar várias etapas. Delegue uma etapa por vez e confira o diff local antes de avançar. O tamanho depende do que você consegue entender e revisar em conjunto.
+No planejamento, peça ao agente que proponha microentregas com um propósito claro, associe as regras e os contratos às etapas afetadas e indique como conferir cada uma. Você ajusta ou aceita essa divisão ao revisar o plano. O tamanho depende do contexto necessário para entender a mudança e da sua capacidade de revisá-la em conjunto.
 
-A cada etapa, confira as regras que continuam valendo. Peça ao agente que execute as verificações aplicáveis e informe o que ainda falta verificar. Após a revisão, confirme a conclusão para que ele marque o item no `task.md`.
+Uma alteração pontual, um conjunto de componentes relacionados e um fluxo delimitado são referências de tamanho que podem se sobrepor. Uma etapa pode corrigir uma validação, incluir um DTO com o handler que o recebe ou implementar um comportamento pelas camadas existentes. Agrupe o que precisa ser lido junto. Quando o sentido de uma constante ou struct depender de seu uso, inclua esse uso na mesma etapa.
+
+Para uma etapa já autorizada, o agente segue o recorte definido. Se precisar ampliar o escopo, ele apresenta a proposta para você decidir antes de executar a ampliação. Delegue uma etapa por vez e confira o diff local antes de avançar.
+
+A cada etapa, confira as regras que continuam valendo. Peça ao agente que execute as verificações aplicáveis e informe o que ainda falta verificar, incluindo o que depende das próximas etapas. Após a revisão, confirme a conclusão para que ele marque o item no `task.md`.
 
 ## 3. Leve um comportamento integrado ao PR
 
