@@ -1,6 +1,6 @@
 # Ponto de entrada para agentes
 
-Use este arquivo quando o dev pedir para aplicar o guia em um repositório. Confirme o projeto de destino e o acesso às páginas vinculadas. Leia as instruções locais, o contexto e as regras de negócio que já existirem. Se houver conflito com o guia, aponte a diferença ao dev antes de alterar a parte afetada.
+Use este arquivo quando a pessoa responsável pela tarefa pedir para aplicar o guia em um repositório. Confirme o projeto de destino e o acesso às páginas vinculadas. Leia as instruções locais, o contexto e as regras de negócio que já existirem. Se houver conflito com o guia, aponte a diferença à pessoa responsável antes de alterar a parte afetada.
 
 ## O que ler
 
@@ -19,8 +19,8 @@ Adapte estes modelos ao projeto de destino. Reaproveite arquivos que já cumprem
 | `docs/regras-de-negocio.md` | Regras confirmadas ou links para a referência de regras existente. [Modelo](modelos.md#docsregras-de-negociomd) |
 | `task.md` | Estrutura reutilizável para a feature atual e as pendências adiadas. Preserve o conteúdo de uma tarefa que já esteja em andamento. [Modelo](modelos.md#taskmd) |
 
-Preencha com o que puder confirmar no projeto. Leve ao dev as dúvidas sobre comportamento ou comandos. Aplique os limites do modelo de `AGENTS.md` ao preparar o repositório e apresente para revisão o diff dos arquivos criados ou adaptados.
+Preencha com o que puder confirmar no projeto. Leve à pessoa responsável as dúvidas sobre comportamento ou comandos. Aplique os limites do modelo de `AGENTS.md` ao preparar o repositório e apresente para revisão o diff dos arquivos criados ou adaptados.
 
 ## Se a tarefa for trabalhar em uma feature
 
-A partir da conversa com o dev, registre no `task.md` o objetivo, as regras afetadas e como conferir cada etapa. Apresente o plano para revisão e siga o fluxo de execução para implementar, manter o checklist e atualizar as referências duráveis.
+A partir da conversa com a pessoa responsável, registre no `task.md` o objetivo, as regras afetadas e como conferir cada etapa. Apresente o plano para revisão e siga o fluxo de execução para implementar, manter o checklist e atualizar as referências duráveis.

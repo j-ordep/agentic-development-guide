@@ -30,7 +30,7 @@ Documente apenas o que alguém precisará consultar para entender ou mudar o sis
 
 ### Integração entre frontend e backend
 
-Mantenha uma referência compartilhada para a interface da API. No frontend, aponte para a OpenAPI da versão integrada, que pode ser consultada no Swagger UI, quando disponível. Use a documentação do frontend para detalhes próprios de consumo. Se a documentação divergir do endpoint, confira o código ou os testes de integração da versão usada e sinalize a diferença ao dev. [Leitura complementar sobre Swagger UI](https://swagger.io/open-source/swagger-ui/)
+Mantenha uma referência compartilhada para a interface da API. No frontend, aponte para a OpenAPI da versão integrada, que pode ser consultada no Swagger UI, quando disponível. Use a documentação do frontend para detalhes próprios de consumo. Se a documentação divergir do endpoint, confira o código ou os testes de integração da versão usada e sinalize a diferença à pessoa responsável. [Leitura complementar sobre Swagger UI](https://swagger.io/open-source/swagger-ui/)
 
 ## AGENTS.md
 
@@ -39,7 +39,7 @@ Peça ao agente que adapte as instruções ao repositório e mostre o diff para 
 ```markdown
 # Instruções do repositório
 
-Seu papel é ajudar o dev a investigar, implementar e verificar a microentrega escolhida. Leia `docs/README.md` para entender o contexto do projeto.
+Seu papel é ajudar a pessoa responsável pela tarefa a investigar, implementar e verificar a microentrega escolhida. A revisão técnica do código e dos testes cabe à equipe de desenvolvimento. Leia `docs/README.md` para entender o contexto do projeto.
 
 ## Referências e comandos
 
@@ -48,16 +48,16 @@ Seu papel é ajudar o dev a investigar, implementar e verificar a microentrega e
 
 ## Regras de trabalho
 
-- Preserve os arquivos de infraestrutura, DevOps e CI/CD, Docker, configuração de ambiente e o `README.md` da raiz. Se a tarefa depender de uma mudança nesses arquivos, avise o dev para que ele a faça.
+- Preserve os arquivos de infraestrutura, DevOps e CI/CD, Docker, configuração de ambiente e o `README.md` da raiz. Se a tarefa depender de uma mudança nesses arquivos, avise a pessoa responsável para que ela encaminhe a alteração à equipe que mantém esses arquivos.
 - Mantenha o `.env` fora de qualquer commit. Antes de commitar, confira os arquivos no stage.
 - Antes de editar o código, consulte o `task.md`, as referências em `docs/` e os fluxos afetados no código. Separe o contexto e o checklist temporários das regras de negócio e dos contratos que vão continuar valendo.
-- Quando faltarem decisões de negócio ou arquitetura, levante as perguntas que mudam a entrega e compare as opções. Se a proposta, a documentação ou o código divergirem, indique os arquivos, a diferença de comportamento e o impacto. Peça uma decisão ao dev antes de implementar a etapa afetada.
-- Ao consumir uma API, consulte a referência da versão integrada. Se houver dúvida ou divergência, verifique o endpoint no código ou nos testes de integração e peça uma definição ao dev antes de mudar o consumidor.
+- Quando faltarem decisões de negócio ou arquitetura, levante as perguntas que mudam a entrega e compare as opções. Se a proposta, a documentação ou o código divergirem, indique os arquivos, a diferença de comportamento e o impacto. Peça uma decisão à pessoa responsável antes de implementar a etapa afetada.
+- Ao consumir uma API, consulte a referência da versão integrada. Se houver dúvida ou divergência, verifique o endpoint no código ou nos testes de integração e peça uma definição à pessoa responsável antes de mudar o consumidor.
 - Quando a abordagem precisar de revisão ou a mudança for difícil de reverter, apresente um plano e aguarde a revisão antes de editar. Use o modo Plan quando estiver disponível.
-- A partir do que o dev explicar, registre no `task.md` o objetivo, o aceite e a divisão em microentregas que você recomenda, com suas regras e verificações. O dev pode ajustar essa divisão ao revisar o plano. Execute a etapa autorizada e apresente qualquer ampliação de escopo para decisão antes de executá-la.
+- A partir do que a pessoa responsável explicar, registre no `task.md` o objetivo, o aceite e a divisão em microentregas que você recomenda, com suas regras e verificações. Ela pode ajustar essa divisão ao revisar o plano. Execute a etapa autorizada e apresente qualquer ampliação de escopo para decisão antes de executá-la.
 - Dimensione cada microentrega pelo contexto necessário para revisar um propósito. Ela pode ser uma alteração pontual, um conjunto de componentes relacionados ou um fluxo delimitado. Agrupe elementos que precisam ser lidos juntos e inclua o uso de uma constante ou struct quando ele for necessário para entender a mudança. Preserve os comportamentos fora do escopo aprovado.
 - Rode as verificações aplicáveis à etapa. Cubra o comportamento novo e os fluxos existentes afetados. Para um bug reproduzível, adicione um teste de regressão e confirme que falha pelo motivo esperado antes da correção e passa depois.
-- Ao devolver a etapa, informe o que mudou, quais comandos foram executados, os resultados e o que ainda precisa ser conferido, incluindo dependências das próximas etapas. Marque o item no `task.md` após a confirmação do dev e aguarde a autorização para avançar.
+- Ao devolver a etapa, informe o que mudou, quais comandos foram executados, os resultados e o que ainda precisa ser conferido, incluindo dependências das próximas etapas. Marque o item no `task.md` após a confirmação da pessoa responsável e aguarde a autorização para avançar.
 - No encerramento, proponha onde registrar o aprendizado validado. Use a referência mantida pelo projeto para regras e contratos e o `AGENTS.md` para instruções recorrentes de trabalho. Apresente o diff de instruções propostas para revisão antes de adotá-las.
 - Documente só o necessário. No PR, atualize a fonte existente para regras e contratos afetados. Crie um documento apenas quando a informação durável precisar de um lugar próprio.
 - Ao concluir a feature, limpe o contexto específico e os itens concluídos do task.md. Preserve as instruções do arquivo e as pendências adiadas.
@@ -97,7 +97,7 @@ Descreva quando a regra se aplica, qual comportamento deve ocorrer e quais exce�
 
 ## task.md
 
-O agente mantém este arquivo durante a feature e marca as microentregas após a revisão e a confirmação do dev. No encerramento, preserva a estrutura e os itens abertos de **Deixado para depois**.
+O agente mantém este arquivo durante a feature e marca as microentregas após a revisão e a confirmação da pessoa responsável. No encerramento, preserva a estrutura e os itens abertos de **Deixado para depois**.
 
 ```markdown
 # Tarefa atual

@@ -2,9 +2,11 @@
 
 Trabalhe em dupla com um agente de IA e mantenha o controle do código e das regras de negócio.
 
+Neste guia, a pessoa responsável pela tarefa é quem conduz o trabalho com o agente. Ela pode atuar em desenvolvimento, gestão, produto ou design.
+
 ## Por que este guia existe
 
-Quando o agente altera mais do que a tarefa pede, uma mudança pequena pode virar um PR difícil de revisar. Fica mais difícil entender o que mudou e perceber se alguma regra de negócio foi quebrada. A documentação tem um problema parecido. Quando vários arquivos descrevem a mesma regra, eles podem divergir e deixar o dev e o agente em dúvida sobre qual seguir.
+Quando o agente altera mais do que a tarefa pede, uma mudança pequena pode virar um PR difícil de revisar. Fica mais difícil entender o que mudou e perceber se alguma regra de negócio foi quebrada. A documentação tem um problema parecido. Quando vários arquivos descrevem a mesma regra, eles podem divergir e deixar a pessoa responsável e o agente em dúvida sobre qual seguir.
 
 A proposta é usar o agente como parceiro de programação. Você explica o objetivo e discute com ele os requisitos e as decisões técnicas. O agente faz perguntas, registra o plano no `task.md` e implementa uma microentrega por vez, alterando só o necessário para aquela etapa. Você revisa o diff, confere os testes e valida as regras de negócio antes de avançar. No PR, o time revisa a feature integrada.
 
@@ -12,9 +14,9 @@ No mesmo PR, o agente atualiza em `docs/` só o que precisa continuar valendo, r
 
 ## Princípios de trabalho
 
-- **Revise o que a IA produz**. Se você não consegue explicar uma mudança, você não está pronto pra aceitar ela.
+- **Revise o que a IA produz**. Se você não consegue explicar uma mudança, você não está pronto pra aceitar ela. Envolva a equipe de desenvolvimento na revisão técnica de código e testes.
 - **A IA amplifica o que você sabe e pode amplificar seus erros.** Conhecer o domínio ajuda a orientar a solução. Uma premissa errada pode se espalhar por toda a implementação.
-- **O objetivo e os trade-offs são responsabilidade do dev.** Explicite o comportamento esperado, os limites, as concessões aceitáveis e como reconhecer que a tarefa está pronta. Peça ao agente que sinalize o que estiver ambíguo.
+- **O objetivo e os trade-offs são responsabilidade de quem conduz a tarefa.** Explicite o comportamento esperado, os limites, as concessões aceitáveis e como reconhecer que a tarefa está pronta. Peça ao agente que sinalize o que estiver ambíguo.
 
 ## Catálogo
 

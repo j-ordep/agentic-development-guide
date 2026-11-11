@@ -32,7 +32,7 @@ Antes de abrir o PR, rode os testes aplicáveis e confira se cobrem o comportame
 
 ## 4. Guarde a lição no lugar certo
 
-Antes de encerrar a feature, peça ao agente que identifique o que vale preservar e proponha onde registrar. O dev decide o que incorporar.
+Antes de encerrar a feature, peça ao agente que identifique o que vale preservar e proponha onde registrar. A pessoa responsável decide o que incorporar.
 
 | Informação | Onde registrar |
 | --- | --- |
