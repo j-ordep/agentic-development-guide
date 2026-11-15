@@ -1,13 +1,13 @@
 # Modelos para começar
 ## Estrutura de documentação para uma API
 
-Na raiz, o `README.md` apresenta o projeto e como começar. O `AGENTS.md` define o papel do agente e indica onde estão as referências por tarefa. O `task.md` acompanha a feature atual. Em `docs/`, mantenha as informações que alguém precisará consultar para mudar o sistema com segurança.
+Na raiz, o `README.md` apresenta o projeto e como começar. O `AGENTS.md` define o papel do agente e indica onde estão as referências por tarefa. No fluxo simples, o `task.md` acompanha a feature atual. Se o projeto adotar uma ferramenta de SDD, use o [checklist correspondente](sdd.md#se-o-projeto-adotar-openspec). Em `docs/`, mantenha as informações que alguém precisará consultar para mudar o sistema com segurança.
 
 ### Conteúdo mínimo
 
 | Informação | Onde registrar |
 | --- | --- |
-| Regras de negócio | Em um arquivo de `docs/`, descreva o comportamento esperado, as restrições e as exceções que afetam a implementação. |
+| Regras de negócio | Descreva o comportamento esperado, as restrições e as exceções em `docs/` ou nas especificações mantidas pelo projeto. Indique a referência em `docs/README.md`. |
 | Contexto do projeto | Em `docs/README.md`, explique o problema, para quem o projeto existe e seus limites. |
 
 ### O que adicionar quando fizer falta
@@ -44,6 +44,7 @@ Seu papel é ajudar a pessoa responsável pela tarefa a investigar, implementar 
 ## Referências e comandos
 
 - Regras de negócio e contratos aplicáveis — indique os caminhos reais do projeto.
+- Checklist da mudança — `task.md` no fluxo simples ou o checklist da ferramenta de SDD adotada e autorizada.
 - Verificação — indique os comandos que o projeto usa para testes, lint ou build.
 
 ## Regras de trabalho
@@ -52,17 +53,19 @@ Seu papel é ajudar a pessoa responsável pela tarefa a investigar, implementar 
 - Ao recomendar uma skill, priorize a mantida pela equipe responsável pela tecnologia e confirme sua origem oficial. Apresente a finalidade, a fonte, a compatibilidade com o projeto e as ações ou permissões necessárias para aprovação. Revise instruções e scripts, inclusive de fontes oficiais. Se recomendar uma alternativa, informe sua procedência e limitações.
 - Preserve os arquivos de infraestrutura, DevOps e CI/CD, Docker, configuração de ambiente e o `README.md` da raiz. Se a tarefa depender de uma mudança nesses arquivos, avise a pessoa responsável para que ela encaminhe a alteração à equipe que mantém esses arquivos.
 - Mantenha o `.env` fora de qualquer commit. Antes de commitar, confira os arquivos no stage.
-- Antes de editar o código, consulte o `task.md`, as referências em `docs/` e os fluxos afetados no código. Separe o contexto e o checklist temporários das regras de negócio e dos contratos que vão continuar valendo.
+- Antes de editar o código, consulte o checklist escolhido, as referências em `docs/`, as especificações mantidas e os fluxos afetados no código. Separe as tarefas de execução das regras de negócio e dos contratos que vão continuar valendo.
+- Se a mudança envolver várias regras, contratos compartilhados ou alinhamento entre pessoas e sessões, explique o benefício de avaliar uma ferramenta de SDD. Confira o fluxo adotado e a disponibilidade da ferramenta. Com a escolha em aberto, ofereça seguir com `task.md` e microentregas ou avaliar a adoção. Com o fluxo simples já autorizado, prossiga com ele e registre a recomendação para avaliação. Retome essa escolha se a pessoa responsável pedir ou o escopo mudar de forma relevante. Instalação e configuração exigem aprovação.
 - Quando faltarem decisões de negócio ou arquitetura, levante as perguntas que mudam a entrega e compare as opções. Se a proposta, a documentação ou o código divergirem, indique os arquivos, a diferença de comportamento e o impacto. Peça uma decisão à pessoa responsável antes de implementar a etapa afetada.
 - Ao consumir uma API, consulte a referência da versão integrada. Se houver dúvida ou divergência, verifique o endpoint no código ou nos testes de integração e peça uma definição à pessoa responsável antes de mudar o consumidor.
 - Quando a abordagem precisar de revisão ou a mudança for difícil de reverter, apresente um plano e aguarde a revisão antes de editar. Use o modo Plan quando estiver disponível.
-- A partir do que a pessoa responsável explicar, registre no `task.md` o objetivo, o aceite e a divisão em microentregas que você recomenda, com suas regras e verificações. Ela pode ajustar essa divisão ao revisar o plano. Execute a etapa autorizada e apresente qualquer ampliação de escopo para decisão antes de executá-la.
+- A partir do que a pessoa responsável explicar, registre no checklist escolhido o objetivo, o aceite e a divisão em microentregas que você recomenda, com suas regras e verificações. Referencie as especificações existentes. Ela pode ajustar essa divisão ao revisar o plano. Execute a etapa autorizada e apresente qualquer ampliação de escopo para decisão antes de executá-la.
 - Dimensione cada microentrega pelo contexto necessário para revisar um propósito. Ela pode ser uma alteração pontual, um conjunto de componentes relacionados ou um fluxo delimitado. Agrupe elementos que precisam ser lidos juntos e inclua o uso de uma constante ou struct quando ele for necessário para entender a mudança. Preserve os comportamentos fora do escopo aprovado.
 - Rode as verificações aplicáveis à etapa. Cubra o comportamento novo e os fluxos existentes afetados. Para um bug reproduzível, adicione um teste de regressão e confirme que falha pelo motivo esperado antes da correção e passa depois.
-- Ao devolver a etapa, informe o que mudou, quais comandos foram executados, os resultados e o que ainda precisa ser conferido, incluindo dependências das próximas etapas. Marque o item no `task.md` após a confirmação da pessoa responsável e aguarde a autorização para avançar.
+- Ao devolver a etapa, informe o que mudou, quais comandos foram executados, os resultados e o que ainda precisa ser conferido, incluindo dependências das próximas etapas. Marque o item no checklist escolhido após a confirmação da pessoa responsável e aguarde a autorização para avançar.
 - No encerramento, proponha onde registrar o aprendizado validado. Use a referência mantida pelo projeto para regras e contratos e o `AGENTS.md` para instruções recorrentes de trabalho. Apresente o diff de instruções propostas para revisão antes de adotá-las.
 - Documente só o necessário. No PR, atualize a fonte existente para regras e contratos afetados. Crie um documento apenas quando a informação durável precisar de um lugar próprio.
-- Ao concluir a feature, limpe o contexto específico e os itens concluídos do task.md. Preserve as instruções do arquivo e as pendências adiadas.
+- Mantenha um checklist principal por mudança e uma referência mantida por regra ou contrato. Ao adotar OpenSpec, use `openspec/changes/<mudanca>/tasks.md` para as tarefas e indique onde consultar as specs. O `task.md` da raiz pode apontar para esse checklist.
+- No encerramento do fluxo simples, limpe o contexto específico e os itens concluídos do `task.md`, preservando a estrutura e as pendências adiadas. Com OpenSpec, atualize as specs mantidas e arquive os artefatos da mudança conforme o processo aprovado. Inclua as atualizações necessárias no mesmo PR.
 ```
 
 ## docs/README.md
@@ -87,7 +90,7 @@ Indique onde consultar as regras de negócio e outras referências existentes.
 
 ## docs/regras-de-negocio.md
 
-Peça ao agente que reaproveite a referência de regras do projeto e mantenha as dúvidas de comportamento no `task.md` até você confirmar a definição.
+Peça ao agente que reaproveite a referência de regras do projeto e mantenha as dúvidas de comportamento no checklist da mudança até você confirmar a definição.
 
 ```markdown
 # Regras de negócio

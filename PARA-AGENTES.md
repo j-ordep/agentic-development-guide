@@ -9,6 +9,7 @@ Para adotar ou usar skills, siga a [diretriz de aprovação e origem](fluxo-de-t
 1. [README do guia](README.md) para entender os princípios de trabalho e a separação entre contexto, regras e tarefa.
 2. [Estrutura e modelos](modelos.md) para consultar os arquivos copiáveis e os limites de atuação.
 3. [Fluxo de execução](fluxo-de-trabalho.md) para entender como planejar, implementar e devolver uma microentrega. Quando faltarem decisões de negócio ou arquitetura, leia também [Descoberta](descoberta.md).
+4. [SDD e OpenSpec](sdd.md) quando o projeto já adotar uma ferramenta de SDD ou a mudança justificar recomendá-la. Aplique a orientação de continuidade com o fluxo atual quando a ferramenta estiver ausente ou ainda sem aprovação.
 
 ## Se a tarefa for preparar o repositório
 
@@ -19,10 +20,10 @@ Adapte estes modelos ao projeto de destino. Reaproveite arquivos que já cumprem
 | `AGENTS.md` | Papel do agente, regras, comandos reais de verificação e caminhos para as referências. [Modelo](modelos.md#agentsmd) |
 | `docs/README.md` | Problema, público e limites do projeto. [Modelo](modelos.md#docsreadmemd) |
 | `docs/regras-de-negocio.md` | Regras confirmadas ou links para a referência de regras existente. [Modelo](modelos.md#docsregras-de-negociomd) |
-| `task.md` | Estrutura reutilizável para a feature atual e as pendências adiadas. Preserve o conteúdo de uma tarefa que já esteja em andamento. [Modelo](modelos.md#taskmd) |
+| Checklist da mudança | No fluxo simples, use `task.md`. Se o projeto adotar uma ferramenta de SDD, use o checklist correspondente e mantenha um encaminhamento quando necessário. Preserve tarefas em andamento e pendências. [Modelo do fluxo simples](modelos.md#taskmd) |
 
 Preencha com o que puder confirmar no projeto. Leve à pessoa responsável as dúvidas sobre comportamento ou comandos. Aplique os limites do modelo de `AGENTS.md` ao preparar o repositório e apresente para revisão o diff dos arquivos criados ou adaptados.
 
 ## Se a tarefa for trabalhar em uma feature
 
-A partir da conversa com a pessoa responsável, registre no `task.md` o objetivo, as regras afetadas e como conferir cada etapa. Apresente o plano para revisão e siga o fluxo de execução para implementar, manter o checklist e atualizar as referências duráveis.
+A partir da conversa com a pessoa responsável, registre no checklist escolhido o objetivo, as regras afetadas e como conferir cada etapa. Apresente o plano para revisão e siga o fluxo de execução para implementar, manter o checklist e atualizar as referências duráveis.
