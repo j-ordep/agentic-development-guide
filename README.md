@@ -1,6 +1,12 @@
 # Guia de desenvolvimento com agentes de IA
 
-> V2 em avaliação. Esta branch reúne a proposta de uso opcional de SDD e OpenSpec.
+> **V2 não validada.** O fluxo atual já define objetivos, regras, critérios de aceite e microentregas revisáveis. Ainda estamos avaliando se adotar uma ferramenta de SDD, como OpenSpec, traz ganhos que compensam a documentação e a manutenção adicionais.
+>
+> Como contraponto, Fábio Akita escreve “Não preciso de framework” ao descrever seu fluxo com objetivos claros, testes e feedback curto. Em sua crítica a SDD, questiona a especificação extensa como padrão para todos e reconhece valor em documentos de desenho para equipes grandes, sistemas legados e trabalho assíncrono. [Relato sobre seu fluxo](https://akitaonrails.com/2026/04/15/como-falar-com-o-claude-code-efetivamente/) · [Crítica a SDD](https://akitaonrails.com/en/2026/08/18/hot-take-harness-loop-engineering-graph-engineering-are-bullshit/)
+>
+> - **Especificações também podem ser ambíguas.** Um documento detalhado pode deixar decisões importantes em aberto, que aparecem durante a implementação.
+> - **Documentação custa manutenção.** Depois de correções e mudanças no código, a especificação pode ficar desatualizada e passar informações erradas ao próximo agente.
+> - **Parte dos requisitos é descoberta construindo.** Planejar demais antecipadamente pode aumentar o esforço de corrigir decisões que um incremento pequeno teria revelado.
 
 Trabalhe em dupla com um agente de IA e mantenha o controle do código e das regras de negócio.
 

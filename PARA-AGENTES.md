@@ -20,7 +20,7 @@ Adapte estes modelos ao projeto de destino. Reaproveite arquivos que já cumprem
 | `AGENTS.md` | Papel do agente, regras, comandos reais de verificação e caminhos para as referências. [Modelo](modelos.md#agentsmd) |
 | `docs/README.md` | Problema, público e limites do projeto. [Modelo](modelos.md#docsreadmemd) |
 | `docs/regras-de-negocio.md` | Regras confirmadas ou links para a referência de regras existente. [Modelo](modelos.md#docsregras-de-negociomd) |
-| Checklist da mudança | No fluxo simples, use `task.md`. Se o projeto adotar uma ferramenta de SDD, use o checklist correspondente e mantenha um encaminhamento quando necessário. Preserve tarefas em andamento e pendências. [Modelo do fluxo simples](modelos.md#taskmd) |
+| Checklist da mudança | No fluxo simples, use `task.md`. Com uma ferramenta de SDD adotada, use o checklist correspondente. O arquivo da raiz pode ser removido após preservar tarefas, pendências e referências, ou pode servir de encaminhamento. [Modelo do fluxo simples](modelos.md#taskmd) |
 
 Preencha com o que puder confirmar no projeto. Leve à pessoa responsável as dúvidas sobre comportamento ou comandos. Aplique os limites do modelo de `AGENTS.md` ao preparar o repositório e apresente para revisão o diff dos arquivos criados ou adaptados.
 

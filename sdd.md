@@ -26,7 +26,7 @@ A pessoa que conduz a tarefa pode atuar em gestão, produto ou design. A revisã
 
 ## Se o projeto adotar OpenSpec
 
-O checklist principal da mudança passa a ser `openspec/changes/<mudanca>/tasks.md`. Se o projeto mantiver um `task.md` na raiz, use-o como encaminhamento para esse checklist. Indique no `docs/README.md` onde consultar as especificações mantidas em `openspec/specs/` e reaproveite as referências existentes para manter uma fonte por informação.
+O checklist principal da mudança passa a ser `openspec/changes/<mudanca>/tasks.md`. O `task.md` da raiz é opcional e pode ser removido quando esse checklist assumir sua função. Antes de removê-lo, transfira tarefas e pendências para o checklist ou backlog mantido pelo projeto e atualize as referências ao arquivo. Se mantido, ele pode apontar para o checklist principal. Indique no `docs/README.md` onde consultar as especificações mantidas em `openspec/specs/` e reaproveite as referências existentes para manter uma fonte por informação.
 
 Peça ao agente que prepare a proposta e os cenários, esclareça as decisões em aberto e proponha microentregas com contexto suficiente. O desenho técnico deve acompanhar as necessidades da mudança. [Artefatos e critérios do schema padrão](https://openspec.dev/docs/schemas/spec-driven)
 
