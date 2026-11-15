@@ -2,7 +2,7 @@
 
 Comece por aqui quando o objetivo, as regras e o aceite da próxima mudança estiverem claros. Em uma base existente, use a arquitetura, as convenções e os contratos do projeto como ponto de partida. Um ajuste localizado e reversível pode caber em uma microentrega. Mudanças em contratos compartilhados ou dados pedem um plano proporcional ao impacto. Se faltar uma decisão que muda o comportamento ou a arquitetura, [comece pela descoberta](descoberta.md).
 
-Use o checklist da mudança para acompanhar as etapas. No fluxo simples, ele fica no `task.md`. Quando a mudança justificar uma ferramenta de SDD, siga a [orientação sobre recomendação, aprovação e continuidade do trabalho](sdd.md). A escolha do fluxo vale para as microentregas daquela mudança.
+Use o checklist da mudança para acompanhar as etapas. No fluxo simples, ele fica no `task.md`. Se a pessoa responsável solicitar a avaliação de uma ferramenta de SDD, siga a [orientação sobre opções, aprovação e continuidade do trabalho](sdd.md). A escolha do fluxo vale para as microentregas daquela mudança.
 
 ## 1. Encontre as regras antes de editar
 
@@ -30,7 +30,7 @@ A cada etapa, confira as regras que continuam valendo. Peça ao agente que execu
 
 A revisão local acompanha o trabalho do agente em partes. No PR, o time avalia a feature integrada, os contratos e as evidências de que o comportamento funciona. Reúna a feature em um PR quando ela couber em uma revisão. Se ficar grande, divida-a em incrementos funcionais que possam ser integrados separadamente. [Leitura complementar sobre mudanças pequenas](https://google.github.io/eng-practices/review/developer/small-cls.html)
 
-Antes de abrir o PR, rode os testes aplicáveis e confira se cobrem o comportamento novo e os fluxos existentes afetados. Use testes unitários para regras que podem ser verificadas isoladamente e testes de integração quando a mudança depender do encaixe entre partes do sistema. Ao corrigir um bug reproduzível, confirme que o teste de regressão falha pelo motivo esperado antes da correção e passa depois. [Leitura complementar sobre testes](https://martinfowler.com/articles/practical-test-pyramid.html)
+Antes de abrir o PR, rode os testes aplicáveis e confira se cobrem o comportamento novo e os fluxos existentes afetados. Use testes unitários para regras que podem ser verificadas isoladamente e testes de integração quando a mudança depender do encaixe entre partes do sistema. Revise se as asserções comprovam os critérios de aceite com resultados observáveis, como uma resposta esperada ou um dado persistido. Ao corrigir um bug reproduzível, confirme que o teste de regressão falha pelo motivo esperado antes da correção e passa depois. [Leitura complementar sobre testes](https://martinfowler.com/articles/practical-test-pyramid.html) · [Discussão sobre avaliar implementação e testes](https://www.techleads.club/c/blog/spec-driven-em-2026-testei-speckit-superpowers-tlc-e-openspec-contra-um-modelo-puro-analise-completa)
 
 ## 4. Guarde a lição no lugar certo
 
@@ -43,7 +43,7 @@ Antes de encerrar a feature, peça ao agente que identifique o que vale preserva
 | Uma decisão cujo motivo será útil em mudanças futuras | Na referência existente sobre o assunto, com o resultado da pesquisa e as alternativas descartadas que ajudam a explicar a escolha. |
 | Um erro recorrente no modo de trabalhar com o agente | Em uma instrução curta no `AGENTS.md`, quando ela se aplicar a futuras tarefas daquele repositório. |
 
-Peça ao agente que atualize só o necessário nas referências do projeto e inclua essas mudanças no mesmo PR. Se ele propuser uma mudança no `AGENTS.md`, revise o diff antes de adotá-la como instrução permanente. No fluxo simples, peça que ele limpe o contexto e as etapas concluídas do `task.md`, preservando a estrutura e os itens abertos de **Deixado para depois**, com o status e o que falta resolver. Com OpenSpec, siga o [encerramento da mudança](sdd.md#se-o-projeto-adotar-openspec). [Leitura complementar sobre melhoria contínua no fluxo](https://ailair.akitaonrails.com/pt-br/workflow/#basics) · [Leitura complementar sobre registrar decisões e pesquisa](https://akitaonrails.com/2026/09/17/falando-um-pouco-sobre-minhas-skills-de-ia/)
+Peça ao agente que atualize só o necessário nas referências do projeto e inclua essas mudanças no mesmo PR. Se ele propuser uma mudança no `AGENTS.md`, revise o diff antes de adotá-la como instrução permanente. No fluxo simples, peça que ele limpe o contexto e as etapas concluídas do `task.md`, preservando a estrutura e os itens abertos de **Deixado para depois**, com o status e o que falta resolver. Com SDD, siga o [encerramento da mudança na ferramenta adotada](sdd.md#se-o-projeto-adotar-uma-ferramenta-de-sdd). [Leitura complementar sobre melhoria contínua no fluxo](https://ailair.akitaonrails.com/pt-br/workflow/#basics) · [Leitura complementar sobre registrar decisões e pesquisa](https://akitaonrails.com/2026/09/17/falando-um-pouco-sobre-minhas-skills-de-ia/)
 
 ## Ferramentas e limites de execução
 

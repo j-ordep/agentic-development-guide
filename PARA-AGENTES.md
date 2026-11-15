@@ -9,7 +9,7 @@ Para adotar ou usar skills, siga a [diretriz de aprovação e origem](fluxo-de-t
 1. [README do guia](README.md) para entender os princípios de trabalho e a separação entre contexto, regras e tarefa.
 2. [Estrutura e modelos](modelos.md) para consultar os arquivos copiáveis e os limites de atuação.
 3. [Fluxo de execução](fluxo-de-trabalho.md) para entender como planejar, implementar e devolver uma microentrega. Quando faltarem decisões de negócio ou arquitetura, leia também [Descoberta](descoberta.md).
-4. [SDD e OpenSpec](sdd.md) quando o projeto já adotar uma ferramenta de SDD ou a mudança justificar recomendá-la. Aplique a orientação de continuidade com o fluxo atual quando a ferramenta estiver ausente ou ainda sem aprovação.
+4. [SDD, OpenSpec e TLC Spec-Driven](sdd.md) quando a pessoa responsável solicitar essa avaliação ou o projeto já adotar uma ferramenta aprovada. A leitura desta proposta e a disponibilidade da ferramenta devem ser acompanhadas de aprovação para mudar o fluxo.
 
 ## Se a tarefa for preparar o repositório
 
