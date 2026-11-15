@@ -2,6 +2,8 @@
 
 Use este arquivo quando a pessoa responsável pela tarefa pedir para aplicar o guia em um repositório. Confirme o projeto de destino e o acesso às páginas vinculadas. Leia as instruções locais, o contexto e as regras de negócio que já existirem. Se houver conflito com o guia, aponte a diferença à pessoa responsável antes de alterar a parte afetada.
 
+Para adotar ou usar skills, siga a [diretriz de aprovação e origem](fluxo-de-trabalho.md#uso-de-skills).
+
 ## O que ler
 
 1. [README do guia](README.md) para entender os princípios de trabalho e a separação entre contexto, regras e tarefa.

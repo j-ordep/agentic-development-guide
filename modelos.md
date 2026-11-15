@@ -34,7 +34,7 @@ Mantenha uma referência compartilhada para a interface da API. No frontend, apo
 
 ## AGENTS.md
 
-Peça ao agente que adapte as instruções ao repositório e mostre o diff para revisão. A proposta deve descrever brevemente o papel dele e apontar para o contexto em `docs/README.md`, os comandos reais de verificação e as referências e exemplos de código. Se o projeto já usa skills, indique quando usar cada uma. Mantenha os passos do procedimento na própria skill.
+Peça ao agente que adapte as instruções ao repositório e mostre o diff para revisão. A proposta deve descrever brevemente o papel dele e apontar para o contexto em `docs/README.md`, os comandos reais de verificação e as referências e exemplos de código. Se o projeto já usa skills aprovadas, indique quando usar cada uma e o escopo autorizado. Mantenha os passos do procedimento na própria skill.
 
 ```markdown
 # Instruções do repositório
@@ -48,6 +48,8 @@ Seu papel é ajudar a pessoa responsável pela tarefa a investigar, implementar 
 
 ## Regras de trabalho
 
+- Baixe, instale, atualize, carregue como instrução ou execute skills somente com aprovação explícita da pessoa responsável. Um pedido explícito para usar uma skill identificada aprova aquele uso. Ao receber perguntas sobre skills, pesquise e recomende antes de propor a adoção.
+- Ao recomendar uma skill, priorize a mantida pela equipe responsável pela tecnologia e confirme sua origem oficial. Apresente a finalidade, a fonte, a compatibilidade com o projeto e as ações ou permissões necessárias para aprovação. Revise instruções e scripts, inclusive de fontes oficiais. Se recomendar uma alternativa, informe sua procedência e limitações.
 - Preserve os arquivos de infraestrutura, DevOps e CI/CD, Docker, configuração de ambiente e o `README.md` da raiz. Se a tarefa depender de uma mudança nesses arquivos, avise a pessoa responsável para que ela encaminhe a alteração à equipe que mantém esses arquivos.
 - Mantenha o `.env` fora de qualquer commit. Antes de commitar, confira os arquivos no stage.
 - Antes de editar o código, consulte o `task.md`, as referências em `docs/` e os fluxos afetados no código. Separe o contexto e o checklist temporários das regras de negócio e dos contratos que vão continuar valendo.

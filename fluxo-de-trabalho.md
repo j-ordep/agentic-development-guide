@@ -48,3 +48,11 @@ Peça ao agente que atualize só o necessário nas referências do projeto e inc
 Use os arquivos de instrução e as permissões do agente disponível no projeto. Codex e OpenCode usam `AGENTS.md`. No Claude Code, confira quais instruções foram carregadas. Um `CLAUDE.md` pode importar o `AGENTS.md` compartilhado. [Codex — Instruções](https://learn.chatgpt.com/docs/agent-configuration/agents-md) · [OpenCode — Instruções](https://opencode.ai/docs/instructions/) · [Claude Code — Instruções](https://code.claude.com/docs/en/memory)
 
 Use um provedor autorizado para o código e os dados do projeto. Dê ao agente acesso apenas ao necessário para a tarefa. Segredos, ações em produção e alterações irreversíveis exigem tratamento separado e autorização explícita. [Referência sobre segurança de agentes](https://cheatsheetseries.owasp.org/cheatsheets/AI_Agent_Security_Cheat_Sheet.html)
+
+### Uso de skills
+
+Só baixe, instale, atualize, carregue como instrução ou execute skills com aprovação explícita da pessoa responsável. Ao sugerir uma skill, apresente a finalidade, a fonte e as ações ou permissões necessárias e aguarde a decisão. Um pedido explícito para usar uma skill identificada aprova aquele uso. Perguntas sobre skills autorizam pesquisa e recomendação. Confira também as configurações de carregamento automático da ferramenta.
+
+Quando uma skill for solicitada ou estiver sendo avaliada, priorize as mantidas pela equipe responsável pela tecnologia e confirme a autoria na documentação ou no repositório oficial. Se a opção oficial estiver indisponível ou for inadequada ao projeto, apresente a procedência e as limitações da alternativa para aprovação. [Exemplo de skills oficiais do Angular](https://github.com/angular/skills)
+
+A origem oficial ajuda na confiança e na manutenção, mas a segurança também depende das instruções, dos scripts e das permissões da skill. Revise esses pontos antes de aprovar sua adoção. [Referência sobre confiança no carregamento de skills](https://agentskills.io/client-implementation/adding-skills-support#trust-considerations)
