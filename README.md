@@ -14,11 +14,13 @@ No mesmo PR, o agente atualiza em `docs/` só o que precisa continuar valendo, r
 
 ### Escolha do fluxo
 
-A v1 prioriza planejamento proporcional à tarefa, feedback curto e documentação enxuta. A adoção de um framework de desenvolvimento orientado por especificações (SDD) depende de um benefício concreto para o projeto. Essa escolha considera três cuidados discutidos por Fábio Akita. [Comunicação e feedback curto](https://akitaonrails.com/2026/04/15/como-falar-com-o-claude-code-efetivamente/) · [Crítica a SDD](https://akitaonrails.com/en/2026/08/18/hot-take-harness-loop-engineering-graph-engineering-are-bullshit/)
+Nós priorizamos planejamento proporcional à tarefa, feedback curto e documentação enxuta. O fluxo padrão usa `task.md` temporário e microentregas supervisionadas, sem exigir um framework de desenvolvimento orientado por especificações (SDD). Essa escolha considera três cuidados discutidos por Fábio Akita. [Comunicação e feedback curto](https://akitaonrails.com/2026/04/15/como-falar-com-o-claude-code-efetivamente/) · [Crítica a SDD](https://akitaonrails.com/en/2026/08/18/hot-take-harness-loop-engineering-graph-engineering-are-bullshit/)
 
 - **Especificações também podem ser ambíguas.** Um documento detalhado pode deixar decisões importantes em aberto, que aparecem durante a implementação.
 - **Documentação custa manutenção.** Depois de correções e mudanças no código, a especificação pode ficar desatualizada e passar informações erradas ao próximo agente.
 - **Parte dos requisitos é descoberta construindo.** Planejar demais antecipadamente pode aumentar o esforço de corrigir decisões que um incremento pequeno teria revelado.
+
+SDD pode ajudar a alinhar regras com muitos cenários, contratos compartilhados entre equipes e trabalho assíncrono que exige uma referência comum. Para avaliar essa opção, consulte a branch [guide-v2-sdd](https://github.com/j-ordep/agentic-development-guide/tree/guide-v2-sdd), com detalhes sobre OpenSpec e TLC Spec-Driven. A avaliação e a mudança de fluxo dependem de solicitação da pessoa responsável.
 
 ## Princípios de trabalho
 
